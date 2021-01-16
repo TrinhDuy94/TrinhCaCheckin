@@ -1,0 +1,64 @@
+{% block p1 %}
+  {% include 'base/head.html' %}
+{% endblock%}
+{% block js %}
+    <div class="rowc2bdk">
+      <div class="rowc2b1"><p style="float:left;margin:5px;font-size:20px;">Thời gian: {{time}}</p></div>
+      <div class="rowc2b1"><p style="float:left;margin:5px;font-size:20px;">Số lượng đã check in: {{amount}}</p></div>
+      <div class="rowc2b1dk">
+        <div class="columnc2dk1" align="left">
+          <p>Tên:</p>
+        </div>
+        <div class="columnc2dk2">
+          <input style="font-size:20px;margin-top:7px; " type = "text" name ="ten" id="tendk" size="38" />
+        </div>
+      </div>
+      <div class="rowc2b1dk">
+        <div class="columnc2dk1" align="left">
+          <p>Giới tinh:</p>
+        </div>
+        <div class="columnc2dk2">
+          <div class="styled-select">
+            <select id="gt">
+              <option value="Nam">Nam</option>
+              <option value="Nữ">Nữ</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="rowc2b1dk">
+        <div class="columnc2dk1" align="left">
+          <p>Email:</p>
+        </div>
+        <div class="columnc2dk2">
+          <input style="font-size:20px;margin-top:7px;;" type = "email" name ="eml" id="eml" size="28" />
+        </div>
+      </div>
+      <div class="rowc2b1dk">
+        <div class="columnc2dk1" align="left">
+          <p>Số điện thoại:</p>
+        </div>
+        <div class="columnc2dk2">
+          <input style="font-size:20px;margin-top:7px;" type = "text" name ="sdt" id="sdt" size="28" />
+        </div>
+      </div>
+      <div class="rowc2b1dk">
+        <div class="columnc2dk2">
+          <label class="container">CHECKIN
+            <input type="checkbox" id="checkin" name="check" value="X">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+      <div class="rowc2b1dk">
+        <div class="columnbtndk" ></div>
+        <div class="columnbtndk" ></div>
+        <div class="columnbtndk" >
+          <input type="submit" class="btndk" onclick="dangki()" value="Đăng kí"/>
+        </div>
+      </div>
+    </div>
+{% endblock %}
+{% block p2 %}
+  {% include 'base/tail.html' %}
+{% endblock%}

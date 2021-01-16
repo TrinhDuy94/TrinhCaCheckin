@@ -1,0 +1,24 @@
+{% block p1 %}
+  {% include 'base/head.html' %}
+{% endblock%}
+{% block js %}
+
+    <div class="rowc2b">
+      <div class="rowc2b2">
+        <div class="rowc2b1"><p id="time" style="float:left;margin:5px;font-size:20px;">Thời gian: {{time}}</p></div>
+        <div class="rowc2b1"><p id="amount" style="float:left;margin:5px;font-size:20px;">Số lượng đã check in: {{amount}}</p></div>
+        <div class="rowc2b1">
+            <div class="rowc2b1a"><p style="float:right;margin:7px;font-size:20px;">Tên:</p>
+            </div>
+            <div class="rowc2b1b"><input style="font-size:20px;margin:5px; " type = "text" name ="keyword" id="ten" size="30" /></div>
+            <div class="rowc2b1a"><button onclick="get_info()" class="btnFind">Tìm</button></div>
+        </div>
+        <div id="info"></div>
+      </div>
+    </div>
+
+{% endblock %}
+{% block p2 %}
+  {% include 'base/tail.html' %}
+{% endblock%}
+
